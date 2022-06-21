@@ -82,6 +82,7 @@ https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f47
            <li>
            <b>x0</b>: real number
            </li>
+           <li>
            <b>eps</b>: real number
            </li>
            <li>
