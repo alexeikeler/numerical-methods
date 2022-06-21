@@ -103,7 +103,7 @@ https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f47
 <details>
            <summary>Multivariable optimization methods</summary>
            <details>
-           <summary>Regular method with second order derivatives and Hessian matrix.</summary>
+           <summary> fxy_extrema.py - Regular method with second order derivatives and Hessian matrix.</summary>
            <br/>
            You should specify:
            <ul>
@@ -114,5 +114,5 @@ https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f47
            <b>f(x1, x2, ..., xn)</b>: function 
            </li>
            </ul>
-![image](https://user-images.githubusercontent.com/86420598/174897087-b735df5e-ec81-4ff0-be01-670acc3ac94e.png)</details>
 </details>
+
