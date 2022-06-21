@@ -8,15 +8,10 @@ def main():
 
     ############################################################
 
-    #n = int(input('Amount of variables: '))
-    
-    #f = input('f{0} = '.format(variables))
-    
-    #n = 2
-    #4*x1^2-6*x1*x2-34*x1+5*x2^2+42*x2+7
-    n = 3
-    f = 'x1^3 + x2^2 + x3^2 + x2*x3 - 3*x1 + 6*x2 + 2'
+    n = int(input('Amount of variables: '))
     variables = sym.symbols(', '.join([f'x{i}' for i in range(1, n+1)]))
+    f = input('f{0} = '.format(variables))
+
     
     partial_derivs = [sym.diff(f, variable) for variable in variables]
 
@@ -59,8 +54,7 @@ def main():
     print(
         tabulate(dfhs, tablefmt='pretty', showindex=False), '\n'
     )
-    print('--------------------------------------------------')
-        
+    
     ############################################################
 
     h_in_roots = []
@@ -121,7 +115,6 @@ def main():
 
             else:
                 print(f'Point {roots[i]} is a seddle point\n')
-
         print('--------------------------------------------------')
         
 
