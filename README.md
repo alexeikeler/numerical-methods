@@ -22,13 +22,10 @@
              <b>deriv</b>: Func class instance, with lambda function and it's string representation
              </li>
              </ul>
-             <br/>
              
 https://github.com/alexeikeler/numerical-methods/blob/661d7b3da09461fcbf4bbe50daefd2b8b220d24e/BolzanoMethod.py#L71-L77
 
 </details>
-
-
 
 <details>
            <summary>Dichotomizing search</summary>
@@ -48,18 +45,8 @@ https://github.com/alexeikeler/numerical-methods/blob/661d7b3da09461fcbf4bbe50da
              <b>func</b>: Func class instance, with lambda function and it's string representation
              </li>
              </ul>
-             <br/>
              
-             
-```python
-def anton_var():
-    a, b = -9, -6
-    eps = 0.1
-    l = 0.5
-    func = Func(lambda x: (x + 7)**2, "(x + 7)^2")
-    ds = DichotomizingSearch(func=func, a=a, b=b, eps=eps, l=l)
-    ds.solve()
-```
+https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f476d53b206279fe9/DichotomizingSearch.py#L91-L97
 </details>
 
 
@@ -81,17 +68,8 @@ def anton_var():
              <b>func</b>: Func class instance, with lambda function and it's string representation
              </li>
              </ul>
-             <br/>
              
-             
-```python
-def anton_var():
-    a, b = -9, -6
-    l = 0.5
-    func = Func(lambda x: (x + 7)**2, "(x + 7)^2")
-    ds = GoldenRationMethod(func=func, a=a, b=b, l=l)
-    ds.solve()
-```
+https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f476d53b206279fe9/GoldenRatioMethod.py#L107-L112
 </details>
 
 
@@ -116,17 +94,5 @@ def anton_var():
              <b>second deriv</b>: Func class instance, with lambda function and it's string representation
              </li>
              </ul>
-             <br/>
-             
-             
-```python
-def anton_var():
-    x0 = 2.4
-    eps = 0.1
-    func = Func(lambda x: x**3 - 2*x**2 + x - 1, "x^3 - 2*x^2 + x - 1")
-    deriv = Func(lambda x: 3*x**2 - 4*x + 1, "3*x^2 - 4*x + 1")
-    second_deriv = Func(lambda x: 6*x - 4, "6*x - 4")
-    ds = NewtonMethod(func=func, first_deriv=deriv, second_deriv=second_deriv, x0=x0, eps=eps)
-    ds.solve()
-```
+https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f476d53b206279fe9/NewtonMethod.py#L71-L78
 </details>
