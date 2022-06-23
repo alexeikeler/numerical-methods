@@ -12,9 +12,7 @@ def main():
     variables = sym.symbols(', '.join([f'x{i}' for i in range(1, n+1)]))
     f = input('f{0} = '.format(variables))
 
-    
     partial_derivs = [sym.diff(f, variable) for variable in variables]
-
 
     print('\nPartial derivatives:', *partial_derivs, sep='\n')
     print('\nSystem of equations:')
