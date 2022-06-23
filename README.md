@@ -1,6 +1,6 @@
 # numerical-methods
-
-
+<details>
+           <summary>Single variable optimization methods</summary>
 <details>
            <summary>Bolzano method</summary>
            <br/>
@@ -97,3 +97,22 @@ https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f47
              </ul>
 https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f476d53b206279fe9/NewtonMethod.py#L71-L78
 </details>
+           
+</details>
+
+<details>
+           <summary>Multivariable optimization methods</summary>
+           <details>
+           <summary> fxy_extrema.py - Regular method with second order derivatives and Hessian matrix.</summary>
+           <br/>
+           You should specify:
+           <ul>
+           <li>
+           <b>n</b>: amount of variables
+           </li>
+           <li>
+           <b>f(x1, x2, ..., xn)</b>: function 
+           </li>
+           </ul>
+</details>
+
