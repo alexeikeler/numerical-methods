@@ -154,7 +154,7 @@ Example:
   <b>!!!Important!!!</b>
   <li>
   Constraints must be written like the one in example above, i.e. NOT LIKE x1**2 + x2**2 = 1 but x1**2 + x2**2 - 1. 
-  In other words you must move everything from left to right.
+  In other words you must move everything from right to left.
   </li>
 </ul>
 
