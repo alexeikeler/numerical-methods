@@ -83,14 +83,13 @@ def main():
 
     variables_number = int(input('Number of variables: '))
     variables = list(sp.var(' ,'.join([f'x{i}' for i in range(1, variables_number+1)])))
-    print(variables)
     f = sp.parse_expr(input(f'f{variables} = '))
 
     constrains_number = int(input('Number of constraints: '))
-    constrains = [sp.parse_expr(input(f'Constrain # {i}: ')) for i in range(1, constrains_number+1)]
-    print(constrains)
+    constrains = [sp.parse_expr(input(f'Constraint # {i}: ')) for i in range(1, constrains_number+1)]
+
     lmbds = [sp.symbols(f'lambda{i}') for i in range(1, constrains_number+1)]
-    print(lmbds)
+
     solve(
          f,
          variables,

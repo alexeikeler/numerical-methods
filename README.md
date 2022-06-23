@@ -103,16 +103,59 @@ https://github.com/alexeikeler/numerical-methods/blob/bb3184de1e268a8afd104d2f47
 <details>
            <summary>Multivariable optimization methods</summary>
            <details>
-           <summary> fxy_extrema.py - Regular method with second order derivatives and Hessian matrix.</summary>
-           <br/>
-           You should specify:
-           <ul>
-           <li>
-           <b>n</b>: amount of variables
-           </li>
-           <li>
-           <b>f(x1, x2, ..., xn)</b>: function 
-           </li>
-           </ul>
-</details>
+                      <summary> fxy_extrema.py - Programm for finding function extremum. </summary>
+                      <br/>
+                      You should specify:
+                      <ul>
+                      <li>
+                      <b>n</b>: amount of variables
+                      </li>
+                      <li>
+                      <b>f(x1, x2, ..., xn)</b>: function 
+                      </li>
+                      </ul>
+           </details>
+
+<details>
+<summary> lagrange_opt.py - Programm for finding function extemum subject to constraints.</summary> 
+
+  <br/>
+  You should specify:
+  <ul>
+  <li>
+  <b></b> Number of variables.
+  </li>
+  <li>
+  <b>f(x1, x2, ..., xn)</b>: function 
+  </li>
+  <li>
+  <b></b>Number of constraints. 
+  </li>
+  <li>
+  <b>g1, g2, ..., gn</b>: Constraints. 
+  </li>
+  </ul>
+<br/>
+Example:
+<ul>
+    <li>
+    Number of variables: 2
+    </li>
+    <li>
+    f[x1, x2] = 6-4*x1-3*x2   
+    </li>
+    <li>
+    Number of constraints: 1
+    </li>
+    <li>
+    Constraint # 1: x1**2 + x2**2 - 1
+    </li>
+</ul>
+  <b>!!!Important!!!</b>
+  <li>
+  Constraints must be written like the one in example above, i.e. NOT LIKE x1**2 + x2**2 = 1 but x1**2 + x2**2 - 1. 
+  In other words you must move everything from left to right.
+  </li>
+</ul>
+
 
